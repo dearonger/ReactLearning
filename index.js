@@ -10,7 +10,6 @@ class Avatar extends React.Component{
       );
   }
 }
-
 function UserInfo(props){
   return(
     <div className="UserInfo">
