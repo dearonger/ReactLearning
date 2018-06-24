@@ -1,13 +1,16 @@
 function formateDate(date){
   return date.toLocaleDateString();
 }
-function Avatar(props){
-  return(
-  <img className="Avatar"
-  src={props.user.avatarUrl}
-  alt={props.user.name}/>
-  );
+class Avatar extends React.Component{
+  render(){
+    return(
+      <img className="Avatar"
+      src={this.props.user.avatarUrl}
+      alt={this.props.user.name}/>
+      );
+  }
 }
+
 function UserInfo(props){
   return(
     <div className="UserInfo">
