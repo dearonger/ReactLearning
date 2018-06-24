@@ -10,15 +10,17 @@ class Avatar extends React.Component{
       );
   }
 }
-function UserInfo(props){
-  return(
+class UserInfo extends React.Component{
+  render(){
+    return(
     <div className="UserInfo">
-        <Avatar user={props.user} />
+        <Avatar user={this.props.user} />
         <div className="UserInfo-name">
-          {props.user.name}
+          {this.props.user.name}
         </div>
     </div>
   );
+  }
 }
 function Comment(props){
   return (
