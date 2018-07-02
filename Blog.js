@@ -31,4 +31,3 @@ function Blog(props){
     <Blog posts={posts} />,
     document.getElementById('root')
   );
-  
