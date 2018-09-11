@@ -1,0 +1,11 @@
+{
+  "name": "reactDemos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/standalone": "^7.0.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
+  }
+}
