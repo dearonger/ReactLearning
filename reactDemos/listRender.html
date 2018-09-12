@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>list render</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script src="node_modules/@babel/standalone/babel.js"></script>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+
+    <script type="text/babel">
+    const lis = [
+        <li id="1">🍎</li>,
+        <li id="2">🍌</li>,
+        <li id="3">🍊</li>
+    ]
+    const infor = [
+        {
+            id:1,
+            name:"wow,"
+        },
+        {
+            id:2,
+            name:"hello"
+        },
+        {
+            id:3,
+            name:"React"
+        }
+    ]
+    const lis2 = infor.map(item => {
+        return <li key={item.id}>{item.name}</li>
+    })
+    const elem = (
+        <div>
+            <ul>{lis}</ul>
+            <ul>{lis2}</ul>
+        </div>
+    )
+        
+    
+    ReactDOM.render(
+        elem,
+        document.getElementById("app")
+    )
+    </script>
+</body>
+
+</html>
